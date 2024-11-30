@@ -18,6 +18,12 @@ function stringCalcTester(str) {
 
     if (stringCalculator('2,1002') === 2) console.log('Test passed!')
     else console.log('Test failed...');
+
+    if (stringCalculator('//[***]\n1***2***4') === 7) console.log('Test passed!')
+    else console.log('Test failed...');
+
+    if (stringCalculator('//[*][%]\n1*2%3') === 6) console.log('Test passed!')
+    else console.log('Test failed...');
 }
 
 module.exports = { stringCalcTester }
