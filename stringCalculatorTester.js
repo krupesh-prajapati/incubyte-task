@@ -10,6 +10,8 @@ function stringCalcTester(str) {
     if (stringCalculator('1\n2,3') === 6) console.log('Test passed!')
     else console.log('Test failed...');
 
+    if (stringCalculator('//;\n1;2') === 3) console.log('Test passed!')
+    else console.log('Test failed...');
 }
 
 module.exports = { stringCalcTester }
